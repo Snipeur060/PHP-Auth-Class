@@ -36,12 +36,24 @@ class Auth
             if (password_verify($password, $user['password'])) {
                 // Password is correct, log the user in
                 return true;
-            } else {
+            } 
+            else {
                 // Password is incorrect
                 return false;
             }
-        } else {
+        } 
+        else {
             // User was not found
+            return false;
+        }
+    }
+    
+    public function check(){
+        // Check if the user is logged in by checking the session variable
+        if (isset($_SESSION['user_id'])) {
+            return true;
+        } 
+        else {
             return false;
         }
     }
