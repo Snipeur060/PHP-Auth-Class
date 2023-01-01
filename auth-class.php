@@ -57,6 +57,12 @@ class Auth
             return false;
         }
     }
+    
+    public function logout(){
+        // Unset the session variable and destroy the session
+        unset($_SESSION['user_id']);
+        session_destroy();
+    }
 }
 
 ?>
