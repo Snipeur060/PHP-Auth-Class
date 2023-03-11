@@ -62,6 +62,7 @@ class Auth
                 $stmt->bind_param("ss", $newHash, $username);
                 $stmt->execute();
             } elseif (password_verify($password, $user['password'])) {
+				$_SESSION['user_id'] = $user['id'];
                 // Le mot de passe est correct et ne nécessite pas de ré-hachage
                 return true;
             } else {
