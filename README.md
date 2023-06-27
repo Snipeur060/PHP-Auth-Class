@@ -8,7 +8,7 @@
 
 <h2>Project Screenshots:</h2>
 
-<img src="https://raw.githubusercontent.com/Snipeur060/PHP-Auth-Class/main/.github/rlock.png" alt="project-screenshot" width="400" height="400/">
+<img src="https://raw.githubusercontent.com/Snipeur060/PHP-Auth-Class/main/.github/rlock.png" alt="project-screenshot" >
 
 <h2>🛠️ Installation Steps:</h2>
 
